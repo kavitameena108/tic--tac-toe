@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color:blueviolet;
+    color: white;
+    height: 65px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.Container{
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns: repeat(3,10vw);
+font-family:'Times New Roman', Times, serif ;
+position: relative;
+}
+.box{
+    border: 3px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.box:hover{
+    background-color: rgb(227, 217, 217);
+}
+.info{
+    font-size: 25px;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.gameInfo{
+    padding: 0 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgbox img{
+    margin-top: 30px;
+    padding: 0 23px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    background-color: aqua;
+    margin: 20px;
+    padding: 8px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.line{
+    background-color: black;
+    background-color: red;
+    height: 8px;
+    width: 0vw;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width:800px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .Container {
+       
+        grid-template-rows: repeat(3,10vw);
+        grid-template-columns: repeat(3,10vw);
+    }
+}
+#audio1{
+    margin: 0 23px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 15px;
+}
+#audio2{
+    margin: 0px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 15px;
+}
+.h1{
+    font-size: 20px;
+}
